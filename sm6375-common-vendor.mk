@@ -892,6 +892,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm6375-common/proprietary/vendor/lib64/libqcrilNrQtiBus.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcrilNrQtiBus.so \
     vendor/oneplus/sm6375-common/proprietary/vendor/lib64/libqcrilNrQtiMutex.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcrilNrQtiMutex.so \
     vendor/oneplus/sm6375-common/proprietary/vendor/lib64/libqcrildatactl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcrildatactl.so \
+    vendor/oneplus/sm6375-common/proprietary/vendor/lib64/libqcrildataqos.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcrildataqos.so \
     vendor/oneplus/sm6375-common/proprietary/vendor/lib64/libqdcm-mode-parser.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdcm-mode-parser.so \
     vendor/oneplus/sm6375-common/proprietary/vendor/lib64/libqdi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdi.so \
     vendor/oneplus/sm6375-common/proprietary/vendor/lib64/libqdma_file_agent.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdma_file_agent.so \
@@ -972,7 +973,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm6375-common/proprietary/vendor/lib64/vendor.display.color@1.4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.4.so \
     vendor/oneplus/sm6375-common/proprietary/vendor/lib64/vendor.display.color@1.5.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.5.so \
     vendor/oneplus/sm6375-common/proprietary/vendor/lib64/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.postproc@1.0.so \
-    vendor/oneplus/sm6375-common/proprietary/vendor/lib64/vendor.oplus.hardware.radio-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oplus.hardware.radio-V1-ndk_platform.so \
+    vendor/oneplus/sm6375-common/proprietary/vendor/lib64/vendor.oplus.hardware.radio-V2-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oplus.hardware.radio-V2-ndk_platform.so \
     vendor/oneplus/sm6375-common/proprietary/vendor/lib64/vendor.qti.data.factory@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.factory@2.0.so \
     vendor/oneplus/sm6375-common/proprietary/vendor/lib64/vendor.qti.data.factory@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.factory@2.1.so \
     vendor/oneplus/sm6375-common/proprietary/vendor/lib64/vendor.qti.data.factory@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.factory@2.2.so \
