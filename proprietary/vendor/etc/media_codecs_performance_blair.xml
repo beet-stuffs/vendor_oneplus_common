@@ -194,5 +194,14 @@
             <Limit name="measured-frame-rate-720x480" range="57-125" />
             <Limit name="measured-frame-rate-1280x720" range="52-115" />
         </MediaCodec>
+        <!-- #ifndef OPLUS_BUG_COMPATIBILITY -->
+        <!-- HuXiang@MULTIMEDIA.MEDIASERVER.PLAYER.7342822, 2024/06/17, -->
+        <MediaCodec name="c2.android.av1-dav1d.decoder" type="video/av01" update="true">
+            <Limit name="measured-frame-rate-352x288" range="165-363" />
+            <Limit name="measured-frame-rate-640x360" range="107-235" />
+            <Limit name="measured-frame-rate-720x480" range="93-210" />
+            <Limit name="measured-frame-rate-1280x720" range="37-82" />
+        </MediaCodec>
+        <!-- #endif -->
     </Decoders>
 </MediaCodecs>
