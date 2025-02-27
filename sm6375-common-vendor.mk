@@ -844,7 +844,6 @@ PRODUCT_PACKAGES += \
     libdapparamstorage_v3_6 \
     libdeccfg_v3_6 \
     libdlbdsservice_v3_6 \
-    vendor.dolby_v3_6.hardware.dms360@2.0-impl \
     vendor.dolby_v3_6.hardware.dms360@2.0 \
     vendor.oplus.hardware.performance-V1-ndk_platform \
     vendor.oplus.hardware.stability.oplus_project-V1-ndk_platform \
@@ -867,6 +866,7 @@ PRODUCT_PACKAGES += \
     libwvhidl \
     libwvdrmengine \
     vendor.dolby_sp.hardware.dmssp@2.0 \
+    vendor.dolby_v3_6.hardware.dms360@2.0-impl \
     vendor.oplus.hardware.appradio@1.0 \
     vendor.oplus.hardware.ims@1.0 \
     vendor.oplus.hardware.radio@1.0 \
@@ -923,6 +923,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.media.c2@1.0-service \
     ims_rtp_daemon \
     imsdaemon \
+    init.kernel.post_boot-blair \
+    init.kernel.post_boot-holi \
     init.kernel.post_boot \
     init.qcom.sensors \
     init.qti.chg_policy \
