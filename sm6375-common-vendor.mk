@@ -11,6 +11,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm6375-common/proprietary/odm/etc/init/android.hardware.drm@1.3-service.widevine.rc:$(TARGET_COPY_OUT_ODM)/etc/init/android.hardware.drm@1.3-service.widevine.rc \
     vendor/oneplus/sm6375-common/proprietary/odm/etc/init/vendor-oplus-hardware-performance-V1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor-oplus-hardware-performance-V1-service.rc \
     vendor/oneplus/sm6375-common/proprietary/odm/etc/init/vendor.dolby.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.dolby.media.c2@1.0-service.rc \
+    vendor/oneplus/sm6375-common/proprietary/odm/etc/init/vendor.dolby_sp.hardware.dmssp@2.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.dolby_sp.hardware.dmssp@2.0-service.rc \
     vendor/oneplus/sm6375-common/proprietary/odm/etc/init/vendor.dolby_v3_6.hardware.dms360@2.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.dolby_v3_6.hardware.dms360@2.0-service.rc \
     vendor/oneplus/sm6375-common/proprietary/odm/etc/init/vendor.oplus.hardware.stability.oplus_project-V1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.stability.oplus_project-V1-service.rc \
     vendor/oneplus/sm6375-common/proprietary/odm/etc/izat.conf:$(TARGET_COPY_OUT_ODM)/etc/izat.conf \
@@ -861,11 +862,13 @@ PRODUCT_PACKAGES += \
     libcodec2_vndk_sp \
     libdapparamstorage_sp \
     libdeccfg_sp \
+    libdlbdsservice_sp \
     liboemcrypto \
     liboplus_service \
     libui_sp \
     libwvhidl \
     libwvdrmengine \
+    vendor.dolby_sp.hardware.dmssp@2.0-impl \
     vendor.dolby_sp.hardware.dmssp@2.0 \
     vendor.dolby_v3_6.hardware.dms360@2.0-impl \
     vendor.oplus.hardware.appradio@1.0 \
@@ -899,6 +902,7 @@ PRODUCT_PACKAGES += \
     manifest_dax_dolby_v3_6.xml \
     manifest_oplus_stability_project_aidl.xml \
     manifest_performance_aidl.xml \
+    vendor.dolby.hardware.dms.xml \
     adpl \
     adsprpcd \
     cdsprpcd \
@@ -973,6 +977,7 @@ PRODUCT_PACKAGES += \
     wfdservice \
     android.hardware.drm@1.3-service.widevine \
     vendor-oplus-hardware-performance-V1-service \
+    vendor.dolby_sp.hardware.dmssp@2.0-service \
     vendor.dolby_sp.media.c2@1.0-service \
     vendor.dolby_v3_6.hardware.dms360@2.0-service \
     vendor.oplus.hardware.stability.oplus_project-V1-service \
