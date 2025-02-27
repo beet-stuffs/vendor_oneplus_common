@@ -418,3 +418,11 @@ case "$chipfamily" in
 	echo "***WARNING***: Invalid chip family\n\t No postboot settings applied!!\n"
 	;;
 esac
+
+#config fg and top cpu shares
+echo 5120 > /dev/cpuctl/top-app/cpu.shares
+echo 4096 > /dev/cpuctl/foreground/cpu.shares
+
+#config sstop and ssfg cpu shares
+echo 5120 > /dev/cpuctl/sstop/cpu.shares
+echo 4096 > /dev/cpuctl/ssfg/cpu.shares
