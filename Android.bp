@@ -15433,7 +15433,7 @@ cc_prebuilt_library_shared {
                 "android.hardware.graphics.allocator@3.0",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.allocator-V2-ndk",
-                "android.hardware.graphics.common-V5-ndk",
+                "android.hardware.graphics.common-V6-ndk",
                 "android.hardware.graphics.common@1.2",
                 "android.hardware.graphics.mapper@2.0",
                 "android.hardware.graphics.mapper@2.1",
@@ -18138,6 +18138,8 @@ cc_prebuilt_binary {
                 "proprietary/odm/bin/hw/vendor-oplus-hardware-performance-V1-service",
             ],
             shared_libs: [
+                "libprocessgroup_shim",
+                "libbase_shim",
                 "vendor.oplus.hardware.performance-V1-ndk_platform",
                 "libbase",
                 "libcutils",
