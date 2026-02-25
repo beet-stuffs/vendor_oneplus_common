@@ -117,21 +117,6 @@ on boot
 on post-fs-data
     # Create directory used for dump collection
     mkdir /data/vendor/ssrdump 0770 root system
-#ifdef OPLUS_FEATURE_CPUFREQ_BOUNCING
-    chown system system /sys/module/cpufreq_bouncing/parameters/enable
-    chown system system /sys/module/cpufreq_bouncing/parameters/config
-#endif
-# ifdef OPLUS_FEATURE_TPD
-# rock.lin@OPTI, 2020/01/12, add for tpd
-    chown system system /sys/module/tpd/parameters/tpd_enable
-    chown system system /sys/module/tpd/parameters/tpd_cmds
-    chown system system /sys/module/tpd/parameters/tpd_id
-    chown system system /sys/module/tpd/parameters/tpd_dynamic
-    chown system system /sys/module/tpd/parameters/st_tpd_enable
-# endif
-#ifdef OPLUS_FEATURE_INPUT_BOOST
-    chown system system /proc/oplus_frame_boost/sys_ctrl
-#endif
 
 on property:persist.sys.ssr.enable_debug=*
     write /sys/module/subsys_pil_tz/parameters/enable_debug ${persist.sys.ssr.enable_debug}
