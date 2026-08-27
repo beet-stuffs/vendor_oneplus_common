@@ -7,7 +7,6 @@ PRODUCT_SOONG_NAMESPACES += \
 
 PRODUCT_COPY_FILES += \
     vendor/oneplus/sm6375-common/proprietary/odm/etc/init/android.hardware.drm@1.3-service.widevine.rc:$(TARGET_COPY_OUT_ODM)/etc/init/android.hardware.drm@1.3-service.widevine.rc \
-    vendor/oneplus/sm6375-common/proprietary/odm/etc/init/vendor-oplus-hardware-performance-V1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor-oplus-hardware-performance-V1-service.rc \
     vendor/oneplus/sm6375-common/proprietary/odm/etc/init/vendor.oplus.hardware.stability.oplus_project-V1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.stability.oplus_project-V1-service.rc \
     vendor/oneplus/sm6375-common/proprietary/odm/etc/izat.conf:$(TARGET_COPY_OUT_ODM)/etc/izat.conf \
     vendor/oneplus/sm6375-common/proprietary/odm/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_ODM)/etc/media_profiles_V1_0.xml \
@@ -456,7 +455,6 @@ PRODUCT_PACKAGES += \
     libsoc_helper \
     libthermalclient \
     libxml \
-    vendor.oplus.hardware.stability.oplus_project-V1-ndk_platform_vendor \
     vendor.qti.diaghal@1.0_vendor \
     vendor.qti.hardware.bluetooth_sar@1.0 \
     vendor.qti.hardware.bluetooth_sar@1.1 \
@@ -676,7 +674,6 @@ PRODUCT_PACKAGES += \
     vendor.display.color@1.4 \
     vendor.display.color@1.5 \
     vendor.display.postproc@1.0 \
-    vendor.oplus.hardware.radio-V2-ndk_platform \
     vendor.qti.data.factory@2.0 \
     vendor.qti.data.factory@2.1 \
     vendor.qti.data.factory@2.2 \
@@ -813,9 +810,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.imsrtpservice@3.0 \
     vendor.qti.imsrtpservice@3.1 \
     libc++_shared \
-    vendor.oplus.hardware.performance-V1-ndk_platform \
     vendor.oplus.hardware.stability.oplus_project-V1-ndk_platform \
-    vendor.oplus.hardware.stability.oplus_project@1.0 \
     liboemcrypto \
     liboplus_service \
     libwvhidl \
@@ -847,7 +842,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.gnss@4.0-service.xml \
     manifest_android.hardware.drm@1.3-service.widevine.xml \
     manifest_oplus_stability_project_aidl.xml \
-    manifest_performance_aidl.xml \
     adpl \
     adsprpcd \
     cdsprpcd \
@@ -920,7 +914,6 @@ PRODUCT_PACKAGES += \
     dpmd \
     tcmd \
     android.hardware.drm@1.3-service.widevine \
-    vendor-oplus-hardware-performance-V1-service \
     vendor.oplus.hardware.stability.oplus_project-V1-service \
     oplus_sensor_fb
 
